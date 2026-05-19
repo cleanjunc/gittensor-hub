@@ -2097,7 +2097,7 @@ export default function RepoExplorer() {
               display: 'flex',
               flexDirection: 'column',
               overflow: 'hidden',
-              boxShadow: '-18px 0 36px rgba(1, 4, 9, 0.36)',
+              boxShadow: 'var(--shadow-panel-overlay)',
               transform: authorPanelActive ? 'translateX(0)' : 'translateX(100%)',
               transition: 'transform 220ms cubic-bezier(0.2, 0, 0, 1)',
               zIndex: 30,
@@ -2139,7 +2139,7 @@ export default function RepoExplorer() {
             flexDirection: 'column',
             overflow: 'hidden',
             zIndex: 25,
-            boxShadow: '-12px 0 24px rgba(1, 4, 9, 0.28)',
+            boxShadow: 'var(--shadow-panel-overlay)',
           }}
         >
           <Box
@@ -2741,7 +2741,7 @@ const ExplorerPullRow = React.memo(function ExplorerPullRow({
         height: 36,
         borderBottom: '1px solid',
         borderColor: 'var(--border-muted)',
-        bg: mine ? 'rgba(242, 201, 76, 0.08)' : 'transparent',
+        bg: mine ? 'var(--attention-subtle)' : 'transparent',
         borderLeft: '3px solid',
         borderLeftColor: mine ? 'var(--attention-emphasis)' : expanded ? 'var(--accent-emphasis)' : 'transparent',
         '&:hover': { bg: mine ? 'var(--attention-subtle, rgba(242, 201, 76, 0.14))' : 'var(--bg-subtle)' },

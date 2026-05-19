@@ -38,7 +38,7 @@ export function ValidationPicker({
           borderTopLeftRadius: 6,
           borderBottomLeftRadius: 6,
           borderRight: 'none',
-          background: value === 'valid' ? 'rgba(76, 183, 130, 0.28)' : 'var(--bg-emphasis)',
+          background: value === 'valid' ? 'var(--success-subtle)' : 'var(--bg-emphasis)',
           color: value === 'valid' ? 'var(--success-fg)' : 'var(--fg-muted)',
         }}
       >
@@ -55,7 +55,7 @@ export function ValidationPicker({
           ...cellSx,
           borderTopRightRadius: 6,
           borderBottomRightRadius: 6,
-          background: value === 'invalid' ? 'rgba(235, 87, 87, 0.28)' : 'var(--bg-emphasis)',
+          background: value === 'invalid' ? 'var(--danger-subtle)' : 'var(--bg-emphasis)',
           color: value === 'invalid' ? 'var(--danger-fg)' : 'var(--fg-muted)',
         }}
       >
